@@ -20,7 +20,8 @@ describe('cancel notifications', () => {
       notificationId: notification.id,
     });
 
-    expect(notificationsRepository.notifications).toHaveLength(1);
-    expect(notificationsRepository.notifications[0]).toEqual(notification);
+    expect(notificationsRepository.notifications[0].canceledAt).toEqual(
+      expect.any(Date),
+    );
   });
 });
