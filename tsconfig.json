@@ -11,6 +11,7 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,
@@ -23,7 +24,7 @@
       "@application/*": ["./src/application/*"],
       "@helpers/*": ["./src/helpers/*"],
       "@infra/*": ["./src/infra/*"],
-      "@test/*": ["./test/*"],
-    },
+      "@test/*": ["./test/*"]
+    }
   }
 }
